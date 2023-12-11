@@ -20,7 +20,7 @@ Succes!
 - Functioneel testen met een medestudent
 - Wat heb je met de resultaten gedaan
 - Dit voer je zelfstandig en tijdig uit.
-### SEO ADVIESRAPPORT
+### seo adviesrapport
 - Controle op vindbaarheid
 - SEO tools gebruik
 - Tot 4 codeoptimalisatie 
