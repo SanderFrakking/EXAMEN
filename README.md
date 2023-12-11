@@ -11,9 +11,20 @@ Succes!
   - grid layout
 - Beschrijving wireframes
 - Serverinrichting
-
-
-
+### Website
+- In een zipbestand:
+- HTML
+- CSS
+- Moet online benaderbaar zijn
+### Website
+- Functioneel testen met een medestudent
+- Wat heb je met de resultaten gedaan
+- Dit voer je zelfstandig en tijdig uit.
+### SEO ADVIESRAPPORT
+- Controle op vindbaarheid
+- SEO tools gebruik
+- Tot 4 codeoptimalisatie 
+- 2 adviezen over de vindbaarheid
 # resultaat
 ik heb dit examen afgerond met een 9
  - hoofd tructuur van de frontend 8,5
