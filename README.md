@@ -1,5 +1,5 @@
 # EXAMEN html/css
-## opdracht
+# opdracht
 ### inhoud
 Je gaat voor je Keuzedeelexamen Front-end Web Development een website maken voor de nieuwe politieke partij: Partij van Groningen.
 Je krijgt 16 uur de tijd voor deze opdracht.
