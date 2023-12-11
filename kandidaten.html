@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/60b7f63680.js" crossorigin="anonymous"></script>
+    <title>PartijVanGroningen-kandidaten</title>
+</head>
+<!--body-->
+<body>
+<!--header-->
+    <header id="header">
+        <img src="img/beeldmateriaal/logo-pvgr.png" alt="logo-pvgr" style="height: 6.5rem;">
+        <a class="margin" href="index.html" alt="Home" style="width: max-content;">Partij van groningen</a>
+        <div class="collapsed" id="hamburger">
+            <a class="toggle" href="#" onclick="toggle()"></a>
+            <span class="line line-one"></span>
+            <span class="line line-two"></span>
+            <span class="line line-three"></span>
+        </div>
+        <nav class="top" id="nav">
+            <a class="navitem one margin" href="index.html" alt="Home">Home</a>
+            <a class="navitem two margin" href="programma.html" alt="Programma">Programma</a>
+            <a class="navitem three margin" href="kandidaten.html" alt="Kandidaten">Kandidaten</a>
+        </nav>
+    </header>
+
+<!--main-->
+    <main>
+        <img src="img/beeldmateriaal/landschap_in_groningen.jpg" alt="landschap_in_groningen" style="width: 100%;">
+        <div class="maincontainer mckandidaten">
+            <div class="card">
+                <div class="label l1">Hans Buitenom</div>
+                <img src="img/foto kandidaten/img7894.png" alt="hans Buitenom" style="width: 100%;">
+                <p>Email: hans@pvgr.nl</p>
+                <p>Linkedin: https://www.linkedin.com/</p>
+            </div>
+            <div class="card l2">
+                <div class="label">Marcel van Dijk</div>
+                <img src="img/foto kandidaten/img3251.png" style="width: 100%;">
+                Email: marcel@pvgr.nl
+                Linkedin: https://www.linkedin.com/
+            </div>
+            <div class="card l3">
+                <div class="label">Melissa Boter</div>
+                <img src="img/foto kandidaten/img4541.png" alt="Melissa boter" style="width: 100%;">
+                Email: Melissa@pvgr.nl
+                Linkedin: https://www.linkedin.com/
+            </div>
+            <div class="card">
+                <div class="label">Ralf de Boer</div>
+                <img src="img/foto kandidaten/img4568.png" alt="Ralf de Boer" style="width: 100%;">
+                Email: ralf@pvgr.nl
+                Linkedin: https://www.linkedin.com/
+            </div>
+            <div class="card">
+                <div class="label">Storm de Wildt</div>
+                <img src="img/foto kandidaten/img4872.png" alt="Storm de Wildt" style="width: 100%;">
+                Email: storm@pvgr.nl
+                Linkedin: https://www.linkedin.com/
+            </div>
+            <div class="card">
+                <div class="label">Naomi Lissen</div>
+                <img src="img/foto kandidaten/img5412.png" alt="Naomi Lissen" style="width: 100%;">
+                Email: naomi@pvgr.nl
+                Linkedin: https://www.linkedin.com/
+            </div>
+            <div class="card">
+                <div class="label">Nansta El Hando</div>
+                <img src="img/foto kandidaten/img6123.png" alt="Nansta El Hando" style="width: 100%;">
+                Email:  nasta@pvgr.nl
+                Linkedin: https://www.linkedin.com/
+            </div>
+            <div class="card">
+                <div class="label">Frank Hogerdijk</div>
+                <img src="img/foto kandidaten/img7842.png" alt="Frank Hogerdijk" style="width: 100%;">
+                Email:  frank@pvgr.nl
+                Linkedin: https://www.linkedin.com/
+            </div>
+            <div class="card">
+                <div class="label">Karen Wekker</div>
+                <img src="img/foto kandidaten/img9452.png" alt="Karen wekker" style="width: 100%;">
+                Email:  karen@pvgr.nl
+                Linkedin: https://www.linkedin.com/
+            </div>
+            <div class="card">
+                <div class="label">Dirk Hartog</div>
+                <img src="img/foto kandidaten/img1234.png" alt="Dirk Hartog" style="width: 100%;">
+                Email:  dirk@pvgr.nl
+                Linkedin: https://www.linkedin.com/
+            </div>
+     
+                
+        </div>
+    </main>
+
+<!--footer-->
+    <footer>
+        <p class="margin">social</p>
+        <div class="bar barone"></div>
+        <div class="footericons">
+            <i class="footericon fa-brands fa-instagram"></i>
+            <i class="footericon fa-brands fa-facebook"></i>
+            <i class="footericon fa-brands fa-twitter"></i>
+        </div>
+        <div class="bar bartwo"></div>
+        <div class="footertextcontainer">
+            <p class="footertxtone">partij van groningen</p>
+            <p class="footertxtone">Copyright 2023 partij van groningen</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    function toggle() {
+        var x = document.getElementById("nav");
+        var t = document.getElementById("hamburger");
+
+        if (x.className == "top") {
+            x.className = "side"; t.className = "notcollapsed";
+        }
+        else {
+            x.className = "top"; t.className = "collapsed";
+        }
+    }
+</script>
+<script>
+    window.onscroll = function() {FunctionSticked()};
+    var header = document.getElementById("header");
+    var sticked = header.offsetTop;
+    
+    function FunctionSticked() {
+      if (window.pageYOffset > sticked) {
+        header.classList.add("sticked");
+      } else {
+        header.classList.remove("sticked");
+      }
+    }
+</script>
+<script>
+    function FunctionHam(x) {
+        var x = document.getElementById("nav");
+        var t = document.getElementById("hamburger");
+
+        if (x.matches) { // If media query matches
+            if (x.className == "side") {
+                x.className = "top"; t.className = "collapsed";
+            }
+        } 
+        else{
+            x.className = "side"; t.className = "notcollapsed";
+        }
+    }
+    
+    var x = window.matchMedia("(max-width: 766px)")
+    FunctionHam(x) // Call listener function at run time
+    x.addListener(FunctionHam) // Attach listener function on state changes
+</script>
+</html>
+

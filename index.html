@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/60b7f63680.js" crossorigin="anonymous"></script>
+    <title>PartijVanGroningen-home</title>
+</head>
+<!--body-->
+<body>
+<!--header-->
+    <header id="header">
+        <img src="img/beeldmateriaal/logo-pvgr.png" alt="logo-pvgr" style="height: 6.5rem;">
+        <a class="margin" href="index.html" alt="Home" style="width: max-content;">Partij van groningen</a>
+        <div class="collapsed" id="hamburger">
+            <a class="toggle" href="#" onclick="toggle()"></a>
+            <span class="line line-one"></span>
+            <span class="line line-two"></span>
+            <span class="line line-three"></span>
+        </div>
+        <nav class="top" id="nav">
+            <a class="navitem one margin" href="index.html" alt="Home">Home</a>
+            <a class="navitem two margin" href="programma.html" alt="Programma">Programma</a>
+            <a class="navitem three margin" href="kandidaten.html" alt="Kandidaten">Kandidaten</a>
+        </nav>
+    </header>
+
+<!--main-->
+    <main>
+        <img src="img/beeldmateriaal/landschap_in_groningen.jpg" alt="landschap_in_groningen" style="width: 100%;">
+        <div class="maincontainer mchome">
+            <div class="container homeone">
+                <h3>
+                    welkom bij de Partij van groningen
+                </h3>
+                <p>
+                PVGR is een samenwerkingsverband tussen een aantal lokale politieke partijen in Groningen. Die partijen zijn alle lid van gemeenteraden van diverse gemeenten binnen onze mooie provinice.
+                </p>
+                <img class="imageone"src="img/beeldmateriaal/groninger_museum.jpg" alt="groninger_museum" style="width: 100%;">
+            </div>
+            <div class="container hometwo">
+                <img class="imageone"src="img/beeldmateriaal/provinciehuis_groningen.jpg" style="width: 100%;">
+                <p>
+                    De provincie is een middenbestuur, tussen Rijksoverheid en lokale overheid in. Wij vinden dat de provincie zich niet moet gedragen als een verlengstuk van het Rijk, maar als een verlengstuk van de gemeenten. 
+                </p>
+            </div>
+            <div class="container homethree">
+                <img class="imagetwo"src="img/beeldmateriaal/gasuniegebouw.jpg" alt="gasuniegebouw" style="width: 100%;">
+                <p>
+                    De provincie moet in Den Haag en Brussel lobbyen voor de gemeenten om daar ruimte te vinden in regelgeving en/of in financiën om plannen van de gemeenten mogelijk te maken. Dit betekent dat de provincie zich niet overheersend richting gemeenten moet opstellen maar juist als partner!
+                </p>
+            </div>
+            <div class="card">
+                <div class="label">#Samensterk</div>
+                <img src="img/beeldmateriaal/keukens_appingedam.jpg" alt="keukens_appingedam" style="width: 100%;">
+                <p>Samen met de provincie Groningen gaan wij voor een sterker Groningen!</p>
+            </div>
+            <div class="card">
+                <div class="label">Glasvezel in heel Groningen</div>
+                <img src="img/beeldmateriaal/logo-pvgr.png" alt="logo-pvgr" style="width: 100%;">
+                <p>Glasvezel is een noodzakelijke voorziening voor een aantrekkelijk vestigingsklimaat, ontwikkelingen in de zorg om langer thuis te kunnen blijven wonen en noodzakelijk in het huidige digitale tijdperk.
+                </p>
+            </div>
+            <div class="card">
+                <div class="label">Goede bereikbaarheid</div>
+                <img src="img/beeldmateriaal/groningen_oud.jpg" alt="groningen_oud" style="width: 100%;">
+                <p>Om werkgelegenheid te creëren is het belangrijkheid om concurrerend te zijn met andere regio’s.</p>
+            </div>
+        </div>
+    </main>
+
+<!--footer-->
+    <footer>
+        <p class="margin">social</p>
+        <div class="bar barone"></div>
+        <div class="footericons">
+            <i class="footericon fa-brands fa-instagram"></i>
+            <i class="footericon fa-brands fa-facebook"></i>
+            <i class="footericon fa-brands fa-twitter"></i>
+        </div>
+        <div class="bar bartwo"></div>
+        <div class="footertextcontainer">
+            <p class="footertxtone">partij van groningen</p>
+            <p class="footertxtone">Copyright 2023 partij van groningen</p>
+        </div>
+    </footer>
+
+</body>
+<script>
+    function toggle() {
+        var x = document.getElementById("nav");
+        var t = document.getElementById("hamburger");
+
+        if (x.className == "top") {
+            x.className = "side"; t.className = "notcollapsed";
+        }
+        else {
+            x.className = "top"; t.className = "collapsed";
+        }
+    }
+</script>
+<script>
+    window.onscroll = function() {FunctionSticked()};
+    var header = document.getElementById("header");
+    var sticked = header.offsetTop;
+    
+    function FunctionSticked() {
+      if (window.pageYOffset > sticked) {
+        header.classList.add("sticked");
+      } else {
+        header.classList.remove("sticked");
+      }
+    }
+</script>
+<script>
+    function FunctionHam(x) {
+        var x = document.getElementById("nav");
+        var t = document.getElementById("hamburger");
+
+        if (x.matches) { // If media query matches
+            if (x.className == "side") {
+                x.className = "top"; t.className = "collapsed";
+            }
+        } 
+        else{
+            x.className = "side"; t.className = "notcollapsed";
+        }
+    }
+    
+    var x = window.matchMedia("(max-width: 766px)")
+    FunctionHam(x) // Call listener function at run time
+    x.addListener(FunctionHam) // Attach listener function on state changes
+</script>
+</html>
+
