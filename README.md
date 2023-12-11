@@ -3,7 +3,7 @@
 
 ### resultaat
 ik heb dit examen afgerond met een 9
- Markup : * Bullet list
+Markup : * Bullet list
               * Nested bullet
                   * Sub-nested bullet etc
           * Bullet list item 2
